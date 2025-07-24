@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Cotizaciones</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DINO Las Américas<br />GUERRERO TRADING E.I.R.L.</h1>
+
+      <div class="location-select-container">
+        <label for="deliveryLocation">Selecciona un lugar de entrega:</label>
+        <select id="deliveryLocation" class="delivery-location-select">
+          <option value="" disabled selected>Selecciona un lugar</option>
+          <option value="cantera">Cantera</option>
+          <option value="chiclayo">Chiclayo</option>
+          <option value="chongoyape">Chongoyape</option>
+          <option value="patapo">Pátapo</option>
+          <option value="lambayeque">Lambayeque</option>
+          <option value="pimentel">Pimentel</option>
+          <option value="santarosa">Santa Rosa</option>
+          <option value="monsefu">Monsefú</option>
+          <option value="morrope">Mórrope</option>
+          <option value="ferreñafe">Ferreñafe</option>
+          <option value="picsi">Picsi</option>
+          <option value="trancafanupe">Tranca Fanupe</option>
+          <option value="etenciudad">Eten Ciudad</option>
+          <option value="etenpuerto">Eten Puerto</option>
+          <option value="reque">Reque</option>
+          <option value="montegrandereque">Montegrande Reque</option>
+          <option value="pomalca">Pomalca</option>
+          <option value="tuman">Tumán</option>
+          <option value="sanjose">San José</option>
+          <option value="mochumi">Mochumí</option>
+          <option value="punto4">Punto 4</option>
+          <option value="pitipo">Pítipo</option>
+          <option value="tucume">Túcume</option>
+          <option value="illimo">Íllimo</option>
+          <option value="pacora">Pacora</option>
+          <option value="jayanca">Jayanca</option>
+          <option value="sipan">Sipán</option>
+          <option value="pacherres">Pacherres</option>
+          <option value="colliquealto">Collique Alto</option>
+          <option value="zaña">Zaña</option>
+        </select>
+      </div>
+
+      <form id="cotizacionForm">
+        <div id="productos"></div>
+        <button type="button" id="agregarProducto">Agregar Producto</button>
+      </form>
+
+      <hr />
+      <div class="tipo-cliente-options">
+        <h4>Tipo de Cliente:</h4>
+        <label>
+          <input
+            type="checkbox"
+            id="clienteFinal"
+            class="tipo-cliente-checkbox"
+            checked
+          />
+          Cliente Final / Minorista
+        </label>
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            id="clienteFerretero"
+            class="tipo-cliente-checkbox"
+          />
+          Cliente Ferretero / Mayorista
+        </label>
+      </div>
+
+      <div id="preview">
+        <p>
+          No se han agregado elementos a la cotización. Las nuevas cotizaciones
+          se mostrarán aquí.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
